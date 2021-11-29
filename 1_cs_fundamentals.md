@@ -1,7 +1,6 @@
 # Sprint 1: Computer Science Fundamentals
 
-Tips for module project in CodeSignal:
-String methods: isalpha(), isnumeric(), swapcase()
+Useful string methods: isalpha(), isnumeric(), swapcase()
 
 Joining list of strings:
 ```
@@ -16,5 +15,6 @@ Native data types - List, Tuple, String, Dictionary and Set.
 File objects and objects you define with an __iter__() or __getitem()__ method.
 
 ### Helfpful resources
+* Built in types: https://docs.python.org/3/library/stdtypes.html
 * String constants: https://docs.python.org/3.9/library/string.html
 
