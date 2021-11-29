@@ -44,14 +44,11 @@ Useful buiilt-in string methods:
 ```
 This concatenates everything together with the string before the `.join` as a spacer. For example:
 ```
-stringList = ('My', 'name', 'is', 'Josh')
+stringList = ('My', 'name', 'is', 'Josh') # Same behavior with an array or other iterable
 print(''.join(stringList)) # MynameisJosh
 print(' '.join(stringList)) # My name is Josh
 print('!!!'.join(stringList)) # My!!!name!!!is!!!Josh
-
 ```
-This works with arrays and other iterables too.
-
 
 #### Reverse a string or array: 
 ```
