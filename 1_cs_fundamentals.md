@@ -56,7 +56,9 @@ reverse = original[::-1]
 ```
 
 
-### More resources
+## Learn to love the Python docs! Start here:
 * Built in types: https://docs.python.org/3/library/stdtypes.html
 * String constants: https://docs.python.org/3.9/library/string.html
 
+## More resources:
+* [The ultimate guide for data structures & algorithm interviews](https://dev.to/rahhularora/the-ultimate-guide-for-data-structures-algorithm-interviews-npo)
