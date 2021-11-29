@@ -15,6 +15,9 @@
 * Set
 * Array
 
+Iterables: List, Tuple, String, Dictionary and Set.
+(Also any objects you define with an __iter__() or __getitem()__ method)
+
 ## Comparators
 Compare by identity: `objA is objB`
 
@@ -30,22 +33,31 @@ print(numbers is numbers2) # False
 
 ## String manipulation (helpful for CodeSignal algorithm challenges!)
 
-Useful string methods: isalpha(), isnumeric(), swapcase()
+Useful buiilt-in string methods: 
+* isalpha()
+* isnumeric()
+* swapcase()
 
-Joining list of strings:
+#### Joining strings:
 ```
 ''.join(stringList)
 ```
-(Works with any iterable)
+This concatenates everything together with the string before the `.join` as a spacer. For example:
+```
+stringList = ('My', 'name', 'is', 'Josh')
+print(''.join(stringList)) # MynameisJosh
+print(' '.join(stringList)) # My name is Josh
+print('!!!'.join(stringList)) # My!!!name!!!is!!!Josh
 
-Reverse a string or array: 
+```
+This works with arrays and other iterables too.
+
+
+#### Reverse a string or array: 
 ```
 reverse = original[::-1]
 ```
 
-Iterables: Some of the example of iterables are:
-Native data types - List, Tuple, String, Dictionary and Set.
-File objects and objects you define with an __iter__() or __getitem()__ method.
 
 ### More resources
 * Built in types: https://docs.python.org/3/library/stdtypes.html
