@@ -38,7 +38,10 @@ Joining list of strings:
 ```
 (Works with any iterable)
 
-[::-1] to reverse a string or array
+Reverse a string or array: 
+```
+reverse = original[::-1]
+```
 
 Iterables: Some of the example of iterables are:
 Native data types - List, Tuple, String, Dictionary and Set.
