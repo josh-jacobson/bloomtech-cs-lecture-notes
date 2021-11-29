@@ -60,5 +60,11 @@ reverse = original[::-1]
 * Built in types: https://docs.python.org/3/library/stdtypes.html
 * String constants: https://docs.python.org/3.9/library/string.html
 
+## Lecture Slides
+* [Python I](https://docs.google.com/presentation/d/1YwuicgzQFipK7Uymlq5Fm6Aq_PTPPm-4s6-XaXyp5T8/edit?usp=sharing)
+* [Python II](https://docs.google.com/presentation/d/1W5pYcqYYgfhyYnISbIrLu__6HFcUJTqyDHirYPtMd24/edit?usp=sharing)
+* Python III
+* Python IV
+
 ## More resources:
 * [The ultimate guide for data structures & algorithm interviews](https://dev.to/rahhularora/the-ultimate-guide-for-data-structures-algorithm-interviews-npo)
