@@ -24,7 +24,7 @@ Compare by identity: `objA is objB`
 Compare by value: `objA == objB`
 
 Example:
-```
+```python
 numbers = [1, 2, 3]
 numbers2 = [1, 2, 3]
 print(numbers == numbers2) # True
@@ -39,11 +39,11 @@ Useful buiilt-in string methods:
 * swapcase()
 
 #### Joining strings:
-```
+```python
 ''.join(stringList)
 ```
 This concatenates everything together with the string before the `.join` as a spacer. For example:
-```
+```python
 stringList = ('My', 'name', 'is', 'Josh') # Same behavior with an array or other iterable
 print(''.join(stringList)) # MynameisJosh
 print(' '.join(stringList)) # My name is Josh
@@ -51,13 +51,13 @@ print('!!!'.join(stringList)) # My!!!name!!!is!!!Josh
 ```
 
 #### Reverse a string or array: 
-```
+```python
 reverse = original[::-1]
 ```
 
 ## Mutability and Functions 
 Note that in Python, mutable types **can be modified** by functions that receive them as arguments! This is a key difference from other languages like JavaScript, where function arguments are always passed by value and the variable within the function is essentially a copy rather than the original value. Just be safe and avoid mutating the original arguments in your programs. For example:
-```
+```python
 def safeSort(inputList):
   sortedList = list(inputList) # inputList.copy() works too
   sortedList.sort() # the sort method, like many other built-in methods you'll use, mutates the list
@@ -71,9 +71,31 @@ def livingDangerously(inputList):
 
 Note how we define a new list using a list constructor or by copying the other list, rather than using equals assign. Just like in JavaScript, `sortedList = inputList` creates a new pointer (reference) to the same object in memory rather than creating a new object. While Python keeps things a lot more logical and predicatable than JavaScript when it comes to mutations, this "pass by reference" behavior in functions is one big execption that you need to look out for. For new Python devs, this means always remembering that any changes you make to arguments within a function will also apply outside the function.
 
+## Getting fancy: list comprehensions
+Often in algorithms problems you'll want to modify a list, and Python provides a very beautiful way to do so. This is language-specific so don't put too much energy into becoming an expert at this syntax -- you can always just use a for loop instead. But for some this more readable syntax is irresistible!
+
+For example:
+```python
+nums = [1,2,3,4,5]
+
+# The long way
+squared = []
+for n in nums:
+  squared.append(n*n)
+
+# The clever one-liner way, using list comprehension
+squared = [x*x for x in nums]
+```
+
+In general, it works like this:
+```
+new_list = [expression for member in iterable (if conditional)]
+```
+
 ## Learn to love the Python docs! Start here:
 * Built in types: https://docs.python.org/3/library/stdtypes.html
 * String constants: https://docs.python.org/3.9/library/string.html
+* List comprehensions: https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 
 ## Lecture Slides
 * [Python I](https://docs.google.com/presentation/d/1YwuicgzQFipK7Uymlq5Fm6Aq_PTPPm-4s6-XaXyp5T8/edit?usp=sharing)
