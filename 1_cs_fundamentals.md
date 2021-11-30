@@ -87,9 +87,9 @@ for n in nums:
 squared = [x*x for x in nums]
 ```
 
-In general, it works like this:
-```
-new_list = [expression for member in iterable (if conditional)]
+You can also include conditional logic. In general, it works like this:
+```python
+new_list = [expression for member in iterable if conditional]
 ```
 
 ## Learn to love the Python docs! Start here:
