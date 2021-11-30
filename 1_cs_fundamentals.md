@@ -31,7 +31,7 @@ print(numbers == numbers2) # True
 print(numbers is numbers2) # False
 ```
 
-## String manipulation (helpful for CodeSignal algorithm challenges!)
+## String manipulation (often helpful for algorithm problems)
 
 Useful buiilt-in string methods: 
 * isalpha()
@@ -39,6 +39,7 @@ Useful buiilt-in string methods:
 * swapcase()
 * isupper(), islower()
 * upper(), lower()
+* count("x") # how many times does "x" appear in the string
 
 #### Joining strings:
 ```python
