@@ -37,6 +37,8 @@ Useful buiilt-in string methods:
 * isalpha()
 * isnumeric()
 * swapcase()
+* isupper(), islower()
+* upper(), lower()
 
 #### Joining strings:
 ```python
