@@ -18,22 +18,6 @@
 Iterables: List, Tuple, String, Dictionary and Set.
 (Also any objects you define with an __iter__() or __getitem()__ method)
 
-### Passing by value vs reference
-Note that in Python, mutable types **can be modified** by functions that receive them as arguments! This is a key difference from other languages like JavaScript, where function arguments are always passed by value and the variable within the function is essentially a copy rather than the original value. Just be safe and avoid mutating the original arguments in your programs. For example:
-```
-def safeSort(inputList):
-  sortedList = list(inputList) # inputList.copy() works too
-  sortedList.sort() # the sort method, like many other built-in methods you'll use, mutates the list
-  return sortedList
-
-# Don't do this! :x
-def livingDangerously(inputList):
-  inputList.sort() # mutates the original, outside of the function scope
-  return inputList
-```
-
-Note how we define a new list using a list constructor or by copying the other list, rather than using equals assign. Just like in JavaScript, `sortedList = inputList` creates a new pointer (reference) to the same object in memory rather than creating a new object. While Python keeps things a lot more logical and predicatable than JavaScript when it comes to mutations, this "pass by reference" behavior in functions is one big execption that you need to look out for. For new Python devs, this means always remembering that any changes you make to arguments within a function will also apply outside the function.
-
 ## Comparators
 Compare by identity: `objA is objB`
 
@@ -71,6 +55,21 @@ print('!!!'.join(stringList)) # My!!!name!!!is!!!Josh
 reverse = original[::-1]
 ```
 
+## Mutability and Functions 
+Note that in Python, mutable types **can be modified** by functions that receive them as arguments! This is a key difference from other languages like JavaScript, where function arguments are always passed by value and the variable within the function is essentially a copy rather than the original value. Just be safe and avoid mutating the original arguments in your programs. For example:
+```
+def safeSort(inputList):
+  sortedList = list(inputList) # inputList.copy() works too
+  sortedList.sort() # the sort method, like many other built-in methods you'll use, mutates the list
+  return sortedList
+
+# Don't do this! :x
+def livingDangerously(inputList):
+  inputList.sort() # mutates the original, outside of the function scope
+  return inputList
+```
+
+Note how we define a new list using a list constructor or by copying the other list, rather than using equals assign. Just like in JavaScript, `sortedList = inputList` creates a new pointer (reference) to the same object in memory rather than creating a new object. While Python keeps things a lot more logical and predicatable than JavaScript when it comes to mutations, this "pass by reference" behavior in functions is one big execption that you need to look out for. For new Python devs, this means always remembering that any changes you make to arguments within a function will also apply outside the function.
 
 ## Learn to love the Python docs! Start here:
 * Built in types: https://docs.python.org/3/library/stdtypes.html
