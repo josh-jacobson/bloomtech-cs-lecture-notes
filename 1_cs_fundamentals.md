@@ -19,11 +19,11 @@ Iterables: List, Tuple, String, Dictionary and Set.
 (Also any objects you define with an __iter__() or __getitem()__ method)
 
 ### Passing by value vs reference
-Note that in Python, mutable types **can be modified** by functions that receive them as arguments! This is a key difference from other languages like JavaScript, where function arguments are always passed by value and the variable within the function is essentially a copy rather than the original value. Just be safe and avoid reassignment to arguments in your programs, and this is unlikely to trip you up! For example:
+Note that in Python, mutable types **can be modified** by functions that receive them as arguments! This is a key difference from other languages like JavaScript, where function arguments are always passed by value and the variable within the function is essentially a copy rather than the original value. Just be safe and avoid mutating the original arguments in your programs. For example:
 ```
 def safeSort(inputList):
   sortedList = list(inputList) # inputList.copy() works too
-  sortedList.sort()
+  sortedList.sort() # the sort method, like many other built-in methods you'll use, mutates the list
   return sortedList
 
 # Don't do this! :x
