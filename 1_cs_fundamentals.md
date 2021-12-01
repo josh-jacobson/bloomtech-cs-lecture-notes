@@ -18,6 +18,27 @@
 Iterables: List, Tuple, String, Dictionary and Set.
 (Also any objects you define with an __iter__() or __getitem()__ method)
 
+## Useful built-in functions
+**sorted**
+```python
+sorted(input, key=func)
+
+# for example:
+sorted([1,6,2]) # returns [1,2,6], using default sorting method
+sorted(myList, key=len) # returns myList sorted by length
+```
+**len**
+```python
+# for example:
+* len(input) # returns the number of elements in a list, characters in a string, keys in a dictionary, etc
+```
+
+**type**
+```python
+type(3) # int
+type("asdf") # string
+type([1,2,3]) # list
+```
 ## Comparators
 Compare by identity: `objA is objB`
 
@@ -96,7 +117,8 @@ new_list = [expression for member in iterable if conditional]
 ```
 
 ## Learn to love the Python docs! Start here:
-* Built in types: https://docs.python.org/3/library/stdtypes.html
+* Built-in types: https://docs.python.org/3/library/stdtypes.html
+* Built-in functions: https://docs.python.org/3/library/functions.html
 * String constants: https://docs.python.org/3.9/library/string.html
 * List comprehensions: https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 
