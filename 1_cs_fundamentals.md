@@ -29,8 +29,12 @@ sorted(myList, key=len) # returns myList sorted by length
 ```
 **len**
 ```python
+len(input) # returns the number of elements in a list, characters in a string, keys in a dictionary, etc
+
 # for example:
-* len(input) # returns the number of elements in a list, characters in a string, keys in a dictionary, etc
+len([1,9,7]) # 3
+len("asdf") # 4
+len({'a': 'A', 'b': 2}) #2
 ```
 
 **type**
