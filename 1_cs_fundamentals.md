@@ -65,7 +65,7 @@ myList[len(myList) -1] # also works, but not as much of a tasty syntax snaq
 
 You can also get the nth last element of a list with `myList[-n]`, for example the 3rd last element is `myList[-3]`. Nice!
 
-## String manipulation (often helpful for algorithm problems)
+## Working with strings (often helpful for algorithm problems)
 
 Useful buiilt-in string methods: 
 * isalpha()
@@ -102,6 +102,13 @@ reverse = original[::-1]
 #### Find and replace within a string:
 ```python
 replace(' ', '_') # replace all linstances of the first argument with the second. (Spaces to underscores in this example)
+```
+
+#### String interpolation with Python f-strings
+```python
+name = 'World'
+program = 'Python'
+print(f'Hello {name}! This is {program}') # Hello World! This is Python
 ```
 
 ## Fabulous for loops
