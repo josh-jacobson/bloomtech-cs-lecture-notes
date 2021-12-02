@@ -96,6 +96,8 @@ for i in range(n): #iterate from i = 0 to i = n-1
   print(i)
 ```
 
+Python ranges are set up to not include the upper value, as this is most helpful considering that lists and other data structures are indexed from 0. A range can also be defined with a start value, for example `range(3,7)` includes 3, 4, 5, and 6.
+
 ## Mutability and Functions 
 Note that in Python, mutable types **can be modified** by functions that receive them as arguments! This is a key difference from other languages like JavaScript, where function arguments are always passed by value and the variable within the function is essentially a copy rather than the original value. Just be safe and avoid mutating the original arguments in your programs. For example:
 ```python
