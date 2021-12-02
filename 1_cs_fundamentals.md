@@ -56,6 +56,14 @@ print(numbers == numbers2) # True
 print(numbers is numbers2) # False
 ```
 
+## List tips
+Last element of a list:
+```python
+myList[-1] # Equivalent to myList[len(myList) -1]. This is the preferred "Pythonic" syntax
+```
+
+You can also get the nth last element of a list with `myList[-n]`, for example the 3rd last element is `myList[-3]`. Nice!
+
 ## String manipulation (often helpful for algorithm problems)
 
 Useful buiilt-in string methods: 
@@ -83,8 +91,8 @@ print('!!!'.join(stringList)) # My!!!name!!!is!!!Josh
 reverse = original[::-1]
 ```
 
-## Tips for Python for loops
-For loop with index:
+## Python for loop tips
+for loop with index:
 ```python
 for (i, item) in enumerate(items):
   # do stuff for each item, with index i
