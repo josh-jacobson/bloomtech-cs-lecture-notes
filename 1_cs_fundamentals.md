@@ -80,7 +80,8 @@ myList[len(myList) -1] # also works, but not as much of a tasty syntax snaq
 ## Slicing
 A slice is a subset of list elements, with the syntax `list[start:end]`. Same operator as indexing, but with a colon and a second argument.
 
-Note that the result includes list[start] up to list[end-1] but not list[end].
+Note that the result includes `list[start]` up to `list[end-1]`, but not `list[end]`.
+
 Leaving either slice boundary blank means to start from the beginning or go till the end of the list. For example:
 ```python
 myList = [3,6,9,12]
@@ -90,7 +91,9 @@ print(myList[1:]) # [6,9,12]
 print(myList[:2]) # [3,6]
 ```
 
-There's also an optional third argument to the slicing operator if you'd like to use a custom step size: `list[start:end:stepSize]`. For example, `[::3]` would return every third element in the list, and a negative value tells it to index backwards! This is a convenient way to reverse a list or any other sequential data type:
+There's also an optional third argument to the slicing operator if you'd like to use a custom step size: `list[start:end:stepSize]`. For example, `myList[1:9:3]` would return a new list containing `myList[1]`, `myList[4]`, and `myList[7]`.
+
+A negative step size tells the slicing operator to go backwards! So this is a convenient way to reverse a list or any other sequential data type:
 ```python
 reverse = original[::-1]
 ```
