@@ -87,12 +87,19 @@ print(' '.join(stringList)) # My name is Josh
 print('!!!'.join(stringList)) # My!!!name!!!is!!!Josh
 ```
 
+#### Splitting strings:
+Use the helpful `split` method from the string class:
+```python
+text.split() # splits at each space in a string. Helpful for turning a sentence into a word list
+text.split(',') # split at each commma (or any custom string you pass in as the delimiter)
+```
+
 #### Reverse a string or array: 
 ```python
 reverse = original[::-1]
 ```
 
-## Fancy for loops
+## Fabulous for loops
 for loop with index:
 ```python
 for (i, item) in enumerate(items):
