@@ -123,7 +123,7 @@ print('!!!'.join(stringList)) # My!!!name!!!is!!!Josh
 #### Splitting strings:
 Use the helpful `split` method from the string class:
 ```python
-text.split() # splits at each space in a string. Helpful for turning a sentence into a word list
+text.split() # splits at each space in a string. Nice for turning a sentence into a word list
 text.split(',') # split at each commma (or any custom string you pass in as the delimiter)
 ```
 
@@ -152,7 +152,7 @@ for i in range(n): #iterate from i = 0 to i = n-1
   print(i)
 ```
 
-Python ranges are set up to not include the upper value, as this is most helpful considering that lists and other data structures are indexed from 0. A range can also be defined with a start value, for example `range(3,7)` includes 3, 4, 5, and 6.
+A range can also be defined with a start value, for example `range(3,7)` includes 3, 4, 5, and 6. Python ranges start from the lower value and go up to (but do not include) the upper value, just like how the indexing operator handles its arguments.
 
 ## Getting fancy: list comprehensions
 Often in algorithms problems you'll want to modify a list, and Python provides a very beautiful way to do so. This is language-specific so don't put too much energy into becoming an expert at this syntax -- you can always just use a for loop instead. But for some this more readable syntax is irresistible!
