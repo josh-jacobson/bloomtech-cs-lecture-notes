@@ -78,16 +78,21 @@ myList[len(myList) -1] # also works, but not as much of a tasty syntax snaq
 ```
 
 ## Slicing
-A slice is a subset of list elements, with the syntax `list[start:end]`. Same operator as indexing, but with more arguments.
+A slice is a subset of list elements, with the syntax `list[start:end]`. Same operator as indexing, but with a colon and a second argument.
 
 Note that the result includes list[start] up to list[end-1] but not list[end].
-Leaving either slice boundary blank means start from (or go to) the end of the list. For example:
+Leaving either slice boundary blank means to start from the beginning or go till the end of the list. For example:
 ```python
 myList = [3,6,9,12]
 
 print(myList[1:3]) # [6,9]
 print(myList[1:]) # [6,9,12]
 print(myList[:2]) # [3,6]
+```
+
+There's also an optional third argument to the slicing operator if you'd like to use a custom step size: `list[start:end:stepSize]`. For example, `[::3]` would return every third element in the list, and a negative value tells it to index backwards! This is a convenient way to reverse a list or any other sequential data type:
+```python
+reverse = original[::-1]
 ```
 
 ## Working with strings (often helpful for algorithm problems)
@@ -118,12 +123,6 @@ Use the helpful `split` method from the string class:
 text.split() # splits at each space in a string. Helpful for turning a sentence into a word list
 text.split(',') # split at each commma (or any custom string you pass in as the delimiter)
 ```
-
-#### Reverse a string or list: 
-```python
-reverse = original[::-1]
-```
-(This uses the optional third argument to the slicing operator, which gives a step distance. While `[::3]` would return every third element in the list, a negative value tells it to index backwards! This is a convenient way to reverse a list or any other sequential data type. Check out the Indexing and Slicing article linked below for more info.
 
 #### Find and replace within a string:
 ```python
