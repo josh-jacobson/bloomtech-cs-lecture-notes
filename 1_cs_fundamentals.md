@@ -10,10 +10,10 @@
 * tuple
 
 ### Mutable data types (pass by reference)
-* List
-* Dictionary
-* Set
-* Array
+* List (ordered collection, data types can be heterogeneous. Similar to a js array)
+* Dictionary (key-value pairs. Similar to a js object)
+* Array (ordered collection, all elements must be same data type)
+* Set (unordered collection, no duplicate values)
 
 Iterables: List, Tuple, String, Dictionary and Set.
 (Also any objects you define with an __iter__() or __getitem()__ method)
