@@ -99,6 +99,11 @@ text.split(',') # split at each commma (or any custom string you pass in as the 
 reverse = original[::-1]
 ```
 
+#### Find and replace within a string:
+```python
+replace(' ', '_') # replace all linstances of the first argument with the second. (Spaces to underscores in this example)
+```
+
 ## Fabulous for loops
 for loop with index:
 ```python
