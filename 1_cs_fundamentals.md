@@ -83,6 +83,19 @@ print('!!!'.join(stringList)) # My!!!name!!!is!!!Josh
 reverse = original[::-1]
 ```
 
+## Control Flow
+For loop with index:
+```python
+for (i, item) in enumerate(items):
+  # do stuff for each item, with index i
+```
+
+Iterate over a range:
+```python
+for i in range(n): #iterate from i = 0 to i = n-1
+  print(i)
+```
+
 ## Mutability and Functions 
 Note that in Python, mutable types **can be modified** by functions that receive them as arguments! This is a key difference from other languages like JavaScript, where function arguments are always passed by value and the variable within the function is essentially a copy rather than the original value. Just be safe and avoid mutating the original arguments in your programs. For example:
 ```python
