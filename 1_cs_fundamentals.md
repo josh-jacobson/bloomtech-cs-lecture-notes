@@ -179,3 +179,4 @@ For new Python devs, this means remembering that any changes you make to argumen
 
 ## More resources:
 * [The ultimate guide for data structures & algorithm interviews](https://dev.to/rahhularora/the-ultimate-guide-for-data-structures-algorithm-interviews-npo)
+* [Enriching Your Python Classes With Dunder (Magic, Special) Methods](https://dbader.org/blog/python-dunder-methods)
