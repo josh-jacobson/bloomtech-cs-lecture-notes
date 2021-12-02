@@ -56,10 +56,11 @@ print(numbers == numbers2) # True
 print(numbers is numbers2) # False
 ```
 
-## List tips
+## Lists
 Last element of a list:
 ```python
-myList[-1] # Equivalent to myList[len(myList) -1]. This is the preferred "Pythonic" syntax
+myList[-1] # this is the preferred "Pythonic" syntax
+myList[len(myList) -1] # also works, but not as much of a tasty syntax snaq
 ```
 
 You can also get the nth last element of a list with `myList[-n]`, for example the 3rd last element is `myList[-3]`. Nice!
@@ -91,7 +92,7 @@ print('!!!'.join(stringList)) # My!!!name!!!is!!!Josh
 reverse = original[::-1]
 ```
 
-## Python for loop tips
+## Fancy for loops
 for loop with index:
 ```python
 for (i, item) in enumerate(items):
@@ -105,24 +106,6 @@ for i in range(n): #iterate from i = 0 to i = n-1
 ```
 
 Python ranges are set up to not include the upper value, as this is most helpful considering that lists and other data structures are indexed from 0. A range can also be defined with a start value, for example `range(3,7)` includes 3, 4, 5, and 6.
-
-## Mutability and Functions 
-Note that in Python, mutable types **can be modified** by functions that receive them as arguments! This is a key difference from other languages like JavaScript, where function arguments are always passed by value and the variable within the function is essentially a copy rather than the original value. Just be safe and avoid mutating the original arguments in your programs. For example:
-```python
-def safeSort(inputList):
-  sortedList = list(inputList) # inputList.copy() works too
-  sortedList.sort() # the sort method, like many other built-in methods you'll use, mutates the list
-  return sortedList
-
-# Don't do this! :x
-def livingDangerously(inputList):
-  inputList.sort() # mutates the original, outside of the function scope
-  return inputList
-```
-
-Note how we define a new list using a list constructor or by copying the other list, rather than using equals assign. Just like in JavaScript, `sortedList = inputList` creates a new pointer (reference) to the same object in memory rather than creating a new object. While Python keeps things a lot more logical and predicatable than JavaScript when it comes to mutations, this "pass by reference" behavior in functions is one big execption that you need to look out for. 
-
-For new Python devs, this means remembering that any changes you make to arguments within a function will also apply outside the function. Better yet, simply avoid this possibility altogether by using non-mutating built-in methods like `sorted` rather than mutating class methods.
 
 ## Getting fancy: list comprehensions
 Often in algorithms problems you'll want to modify a list, and Python provides a very beautiful way to do so. This is language-specific so don't put too much energy into becoming an expert at this syntax -- you can always just use a for loop instead. But for some this more readable syntax is irresistible!
@@ -144,6 +127,24 @@ You can also include conditional logic. In general, it works like this:
 ```python
 new_list = [expression for member in iterable if conditional]
 ```
+
+## Mutability and Functions 
+Note that in Python, mutable types **can be modified** by functions that receive them as arguments! This is a key difference from other languages like JavaScript, where function arguments are always passed by value and the variable within the function is essentially a copy rather than the original value. Just be safe and avoid mutating the original arguments in your programs. For example:
+```python
+def safeSort(inputList):
+  sortedList = list(inputList) # inputList.copy() works too
+  sortedList.sort() # the sort method, like many other built-in methods you'll use, mutates the list
+  return sortedList
+
+# Don't do this! :x
+def livingDangerously(inputList):
+  inputList.sort() # mutates the original, outside of the function scope
+  return inputList
+```
+
+Note how we define a new list using a list constructor or by copying the other list, rather than using equals assign. Just like in JavaScript, `sortedList = inputList` creates a new pointer (reference) to the same object in memory rather than creating a new object. While Python keeps things a lot more logical and predicatable than JavaScript when it comes to mutations, this "pass by reference" behavior in functions is one big execption that you need to look out for. 
+
+For new Python devs, this means remembering that any changes you make to arguments within a function will also apply outside the function. Better yet, simply avoid this possibility altogether by using non-mutating built-in methods like `sorted` rather than mutating class methods.
 
 ## Learn to love the Python docs! Start here:
 * Built-in types: https://docs.python.org/3/library/stdtypes.html
