@@ -56,14 +56,39 @@ print(numbers == numbers2) # True
 print(numbers is numbers2) # False
 ```
 
-## Lists
-Last element of a list:
+## Indexing
+To retrieve an element of the list (or string), we use the index operator [ ] like this:
+```python
+myString = "abcd"
+myList = [3,6,9]
+
+print(myString[2]) # c
+print(myList[1]) # 3
+```
+
+We can also go backwards using negative indexing! The nth last element of a list is `myList[-n]`:
+```python
+`myList[-3]` # 3rd last element of myList
+```
+
+This is commonly used for fetching the last element of a list:
 ```python
 myList[-1] # this is the preferred "Pythonic" syntax
 myList[len(myList) -1] # also works, but not as much of a tasty syntax snaq
 ```
 
-You can also get the nth last element of a list with `myList[-n]`, for example the 3rd last element is `myList[-3]`. Nice!
+## Slicing
+A slice is a subset of list elements, with the syntax `list[start:end]`. Same operator as indexing, but with more arguments.
+
+Note that the result includes list[start] up to list[end-1] but not list[end].
+Leaving either slice boundary blank means start from (or go to) the end of the list. For example:
+```python
+myList = [3,6,9,12]
+
+print(myList[1:3]) # [6,9]
+print(myList[1:]) # [6,9,12]
+print(myList[:2]) # [3,6]
+```
 
 ## Working with strings (often helpful for algorithm problems)
 
@@ -94,10 +119,11 @@ text.split() # splits at each space in a string. Helpful for turning a sentence 
 text.split(',') # split at each commma (or any custom string you pass in as the delimiter)
 ```
 
-#### Reverse a string or array: 
+#### Reverse a string or list: 
 ```python
 reverse = original[::-1]
 ```
+(This uses the optional third argument to the slicing operator, which gives a step distance. While `[::3]` would return every third element in the list, a negative value tells it to index backwards! This is a convenient way to reverse a list or any other sequential data type. Check out the Indexing and Slicing article linked below for more info.
 
 #### Find and replace within a string:
 ```python
