@@ -112,7 +112,9 @@ def livingDangerously(inputList):
   return inputList
 ```
 
-Note how we define a new list using a list constructor or by copying the other list, rather than using equals assign. Just like in JavaScript, `sortedList = inputList` creates a new pointer (reference) to the same object in memory rather than creating a new object. While Python keeps things a lot more logical and predicatable than JavaScript when it comes to mutations, this "pass by reference" behavior in functions is one big execption that you need to look out for. For new Python devs, this means always remembering that any changes you make to arguments within a function will also apply outside the function.
+Note how we define a new list using a list constructor or by copying the other list, rather than using equals assign. Just like in JavaScript, `sortedList = inputList` creates a new pointer (reference) to the same object in memory rather than creating a new object. While Python keeps things a lot more logical and predicatable than JavaScript when it comes to mutations, this "pass by reference" behavior in functions is one big execption that you need to look out for. 
+
+For new Python devs, this means remembering that any changes you make to arguments within a function will also apply outside the function. Better yet, simply avoid this possibility altogether by using non-mutating built-in methods like `sorted` rather than mutating class methods.
 
 ## Getting fancy: list comprehensions
 Often in algorithms problems you'll want to modify a list, and Python provides a very beautiful way to do so. This is language-specific so don't put too much energy into becoming an expert at this syntax -- you can always just use a for loop instead. But for some this more readable syntax is irresistible!
