@@ -83,7 +83,7 @@ print('!!!'.join(stringList)) # My!!!name!!!is!!!Josh
 reverse = original[::-1]
 ```
 
-## Control Flow
+## Tips for Python for loops
 For loop with index:
 ```python
 for (i, item) in enumerate(items):
