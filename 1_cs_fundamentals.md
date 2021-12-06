@@ -210,3 +210,4 @@ For new Python devs, this means remembering that any changes you make to argumen
 * [Python Classes Tutorial](https://docs.python.org/3/tutorial/classes.html)
 * [The Basics of Indexing and Slicing Python Lists](https://towardsdatascience.com/the-basics-of-indexing-and-slicing-python-lists-2d12c90a94cf)
 * [Enriching Your Python Classes With Dunder (Magic, Special) Methods](https://dbader.org/blog/python-dunder-methods)
+* [Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
