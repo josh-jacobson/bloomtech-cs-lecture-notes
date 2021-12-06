@@ -140,7 +140,7 @@ print(f'Hello {name}! This is {program}') # Hello World! This is Python
 ```
 
 ## Fabulous for loops
-for loop with index:
+Iterate through a list with index:
 ```python
 for (i, item) in enumerate(items):
   # do stuff for each item, with index i
@@ -150,6 +150,18 @@ Iterate over a range:
 ```python
 for i in range(n): #iterate from i = 0 to i = n-1
   print(i)
+```
+
+Dictionary for loop:
+```python
+for key in d:
+  # do stuff, selectively accessing values as needed with d[key]
+```
+
+When you also need *every* value (slower):
+```python
+for key, value in d.items():
+  print(key, value)
 ```
 
 A range can also be defined with a start value, for example `range(3,7)` includes 3, 4, 5, and 6. Python ranges start from the lower value and go up to (but do not include) the upper value, just like how the indexing operator handles its arguments.
