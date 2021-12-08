@@ -215,7 +215,7 @@ For new Python devs, this means remembering that any changes you make to argumen
 * [Python I](https://docs.google.com/presentation/d/1YwuicgzQFipK7Uymlq5Fm6Aq_PTPPm-4s6-XaXyp5T8/edit?usp=sharing)
 * [Python II](https://docs.google.com/presentation/d/1W5pYcqYYgfhyYnISbIrLu__6HFcUJTqyDHirYPtMd24/edit?usp=sharing)
 * [Python III](https://docs.google.com/presentation/d/1ZvCbSK-uFqrpyYMPrudCayV6thTzqLfwT-eIudC_fnY/edit?usp=sharing)
-* [Python IV](https://docs.google.com/presentation/d/17g5vepthZ-R582Z9CBJwzH2TMJHDMI6LTxy6e7wrp2o/edit?usp=sharing)
+* [Python IV](https://docs.google.com/presentation/d/1PbjdNLA2XjPghf4WgrWwmedzb4wqm4wNLdZEHR4wsu4/edit?usp=sharing)
 
 ## More resources:
 * [The ultimate guide for data structures & algorithm interviews](https://dev.to/rahhularora/the-ultimate-guide-for-data-structures-algorithm-interviews-npo)
