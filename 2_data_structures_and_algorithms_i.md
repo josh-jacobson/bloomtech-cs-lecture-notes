@@ -10,12 +10,6 @@ Floor division: //
 print(5 // 2) # 2
 ```
 
-## Computer memory basics
-
-## Hash tables
-
-## Searching algorithms
-
 ## Number bases
 One way to think of the "base" of a number system is how many digits we have to work with.
 
@@ -73,3 +67,4 @@ Binary to base 10:
 * [Searching and Recursion]()
 
 ## Helpful resources
+* [Math is Fun - Number Bases](https://www.mathsisfun.com/numbers/bases.html)
