@@ -60,6 +60,15 @@ Binary to base 10:
 88
 ```
 
+## String Encoding
+ASCII stands for American Standard Code for Information Interchange, and is a simple mapping of 8-bit values to characters. The full table is linked below for reference, here are a few examples:
+* 74 = 0b01001010 = 0x4A => "J"
+* 47 = 0b00101111 = 0x2F => "/"
+
+Originally ASCII was implemented with only 7 bits (128 possible characters), then the eighth bit was added on with variations of "Extended ASCII". Still a bit limiting, though. What about emojis!? 🧘‍♀️🔮💾 Enter Unicode, a more complex system with variable 8, 16, or 32-bit encoding. With this system we could have up to 1,111,998 possible characters! Much more options.
+
+Specifics aside, the key thing to remember is that **string characters are represented in computer memory just like integers, and we use a simple lookup table to create a mapping from number to char.**
+
 ## Lecture slides
 * [Number Bases and Character Encoding](https://docs.google.com/presentation/d/17g5vepthZ-R582Z9CBJwzH2TMJHDMI6LTxy6e7wrp2o/edit?usp=sharing)
 * [Hash Tables I]()
@@ -68,3 +77,4 @@ Binary to base 10:
 
 ## Helpful resources
 * [Math is Fun - Number Bases](https://www.mathsisfun.com/numbers/bases.html)
+* [ASCII Table](https://www.ascii-code.com/)
