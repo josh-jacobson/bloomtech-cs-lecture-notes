@@ -59,25 +59,47 @@ Basic data types and memory addresses are generally stored as 32-bit or 64-bit v
 As you can see, every hexadecimal digit represents 4 binary digits. This makes sense because 16 = 2^4.
 
 
-## Converting between bases
-Convert a "normal" int (base 10) to a binary representation:
+## Converting between bases in Python
+The following are all equivalent ways to assign an integer to a variable in Python:
 ```python
->>> bin(88)
+a = 0b1001010 # binary representation of 74
+b = 0x4a # hexadecimal representaion of 74
+c = 74
+print(a == b) # True
+print(b == c) # True
+```
+The default print formatting uses the base 10 representation that feels "normal" to us humans. Sometimes for algorithms problems, however, you'd like to work with a binary or hexadecimal representation directly. Use these methods to return those representations **as a string**: 
+```python
+>>> a = bin(88)
+>>> print(a)
 '0b1011000' # the '0b' out front indicates binary
+>>> type(a)
+<class 'str'>
+
+>>> hex(88)
+'0x58' # the '0x' out front indicates hexadecimal
 ```
 
-Binary to base 10:
+Likewise, to convert back from a string representation to an int:
 ```python
 >>> int('0b1011000', 2) # specify the base (2 for binary) as the second argument
+88
+>>> int('0x58', 16) # convert from hexadecimal representation (base 16)
 88
 ```
 
 ## String Encoding
-ASCII stands for American Standard Code for Information Interchange, and is a simple mapping of 8-bit values to characters. The full table is linked below for reference, here are a few examples:
-* 74 = 0b01001010 = 0x4A => "J"
-* 47 = 0b00101111 = 0x2F => "/"
+ASCII stands for American Standard Code for Information Interchange, and is a simple mapping of numbers to printable characters. The full table is linked below for reference, here are a few examples:
+| Character | ASCII code (decimal) | Binary | Hexadecimal |
+|---|---|---|---|
+| A | 65 | 0b01000001 | 0x41 |
+| a | 97 | 0b01100001 | 0x61 |
+| J | 74 | 0b01001010 | 0x4A |
+| / | 47 | 0b00101111 | 0x2F |
 
-Originally ASCII was implemented with only 7 bits (128 possible characters), then the eighth bit was added on with variations of "Extended ASCII". 256 possibilities is still very limiting, though. What about emojis!? 🧘‍♀️🔮💾 Enter Unicode, a more complex approach with variable 8, 16, or 32-bit encoding. With this system we could have up to 1,111,998 possible characters! You can think of Unicode as a superset of the ASCII character set since the first 128 characters are the same. UTF-8, also known as HTML Unicode, is the most common encoding system for Unicode and is used for almost all (97.6%) web pages.
+Note how "A" and "a" in binary representation both look like "1" with a different header out front. Clever! In ASCII, any lowercase letter's code is the uppercase code + 32. "J" is 74, "j" is 106.
+
+ASCII dates back to to 1963 and was designed with telegraph systems in mind, using only 7 bits to provide 128 (2^7) possible characters. 33 of these were reserved for control characters like "carriage return" and "end of transmission".  then the eighth bit was added on with variations of "Extended ASCII". 256 possibilities is still very limiting, though. What about emojis!? 🧘‍♀️🔮💾 Enter Unicode, a more complex approach with variable 8, 16, or 32-bit encoding. With this system we could have up to 1,111,998 possible characters! You can think of Unicode as a superset of the ASCII character set since the first 128 characters are the same. UTF-8, also known as HTML Unicode, is the most common encoding system for Unicode and is used for almost all (97.6%) web pages.
 
 Specifics aside, the key thing to remember is that **string characters are represented in computer memory just like integers, and we use a simple lookup table to create a mapping from number to char.**
 
