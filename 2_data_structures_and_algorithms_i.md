@@ -10,6 +10,18 @@ Floor division: //
 print(5 // 2) # 2
 ```
 
+String to ASCII code: `ord`
+```python
+
+ascii_code = ord("J")
+print(ascii_code) # 74
+```
+ASCII code to string: `chr`
+```python
+my_string = chr(74)
+print(my_string) # "J"
+```
+
 ## Number bases
 One way to think of the "base" of a number system is how many digits we have to work with.
 
@@ -65,9 +77,10 @@ ASCII stands for American Standard Code for Information Interchange, and is a si
 * 74 = 0b01001010 = 0x4A => "J"
 * 47 = 0b00101111 = 0x2F => "/"
 
-Originally ASCII was implemented with only 7 bits (128 possible characters), then the eighth bit was added on with variations of "Extended ASCII". Still a bit limiting, though. What about emojis!? 🧘‍♀️🔮💾 Enter Unicode, a more complex system with variable 8, 16, or 32-bit encoding. With this system we could have up to 1,111,998 possible characters! Much more options.
+Originally ASCII was implemented with only 7 bits (128 possible characters), then the eighth bit was added on with variations of "Extended ASCII". 256 possibilities is still very limiting, though. What about emojis!? 🧘‍♀️🔮💾 Enter Unicode, a more complex approach with variable 8, 16, or 32-bit encoding. With this system we could have up to 1,111,998 possible characters! You can think of Unicode as a superset of the ASCII character set since the first 128 characters are the same. UTF-8, also known as HTML Unicode, is the most common encoding system for Unicode and is used for almost all (97.6%) web pages.
 
 Specifics aside, the key thing to remember is that **string characters are represented in computer memory just like integers, and we use a simple lookup table to create a mapping from number to char.**
+
 
 ## Lecture slides
 * [Number Bases and Character Encoding](https://docs.google.com/presentation/d/17g5vepthZ-R582Z9CBJwzH2TMJHDMI6LTxy6e7wrp2o/edit?usp=sharing)
@@ -78,3 +91,4 @@ Specifics aside, the key thing to remember is that **string characters are repre
 ## Helpful resources
 * [Math is Fun - Number Bases](https://www.mathsisfun.com/numbers/bases.html)
 * [ASCII Table](https://www.ascii-code.com/)
+* [Characters, Symbols and the Unicode Miracle - Computerphile](https://www.youtube.com/watch?v=MijmeoH9LT4&ab_channel=Computerphile)
