@@ -103,9 +103,9 @@ Specifics aside, the key thing to remember is that **string characters are repre
 
 ## Lecture slides
 * [Number Bases and Character Encoding](https://docs.google.com/presentation/d/17g5vepthZ-R582Z9CBJwzH2TMJHDMI6LTxy6e7wrp2o/edit?usp=sharing)
-* [Hash Tables I]()
-* [Hash Tables II]()
-* [Searching and Recursion]()
+* [Hash Tables I](https://docs.google.com/presentation/d/1vnIUo4Ws1KCmS26XnZmnWSaIqOuf1FcN4NlnqI0yxNI/edit?usp=sharing)
+* [Hash Tables II](https://docs.google.com/presentation/d/1Uxo56PZgA5KE82BK2Wrhagg0bHnV4b1b1e8XKXwvX9o/edit?usp=sharing)
+* [Searching and Recursion](https://docs.google.com/presentation/d/1wIuyeZPYYJ2RrG-ugnVHP6SGWzsn8i6Oj1KDEng-ZkQ/edit?usp=sharing)
 
 ## Helpful resources
 * [Math is Fun - Number Bases](https://www.mathsisfun.com/numbers/bases.html)
