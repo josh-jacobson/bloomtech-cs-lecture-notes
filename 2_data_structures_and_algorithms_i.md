@@ -37,13 +37,7 @@ We can count 1, 2, 3, ... all the way up to 9 but then what's that next value, t
 
 Because coumputers are built around transistors with on/off, 0/1 binary behavior, all computer operations are actually dealing with binary values. Base 10 doesn't really make sense for computers because it's not a power of 2! You'll often see hexadecimal numbers as a more readable, compact representation of a binary number. Four binary digits can be represented by a single hexadecimal digit. Let's see how:
 
-An 8-digit binary number (aka 8 bits or 1 byte) can represent 256 (2^8) different values, inclusive from 0 to 255.
-```
-0b10000000 = 255
-0b00001001 = 9
-```
-
-In base 16 (Hexadecimal), we have 16 different possible digits. These are represented with the digits we know (0-9) plus the first five letters of the alphabet:
+In base 16 (Hexadecimal), we have 16 different possible digits. Imagine that you had sixteen fingers instead of ten, and we had five additional words used for counting verbally. For the sake of simplicity, we represent hexadecimal numbers using the digits we know (0-9) plus the first five letters of the alphabet. A is ten, B is eleven, and so on:
 * 0xA = 10 = 0b1010
 * 0xB = 11 = 0b1011
 * 0xC = 12 = 0b1100
@@ -52,10 +46,11 @@ In base 16 (Hexadecimal), we have 16 different possible digits. These are repres
 * 0xF = 15 = 0b1111
 
 Basic data types and memory addresses are generally stored as 32-bit or 64-bit values. Rather than writing out those very long values, we can use hexadecimal notation:
-```
-0xabc1 = 0b10101011 11000001 (16 bits)
-0xf9ab1234 = 0b011111001 10101011 00010010 00110100 (32 bits)
-```
+| Hexadecimal | Binary |
+|---|---|
+| 0xabc1 (4 hex digits) | 10101011 11000001 (16 bits) |
+| 0xf9ab1234 (8 hex digits) | 011111001 10101011 00010010 00110100 (32 bits) |
+
 As you can see, every hexadecimal digit represents 4 binary digits. This makes sense because 16 = 2^4.
 
 
