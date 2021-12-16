@@ -112,3 +112,4 @@ Specifics aside, the key thing to remember is that **string characters are repre
 * [ASCII Table](https://www.ascii-code.com/)
 * [Characters, Symbols and the Unicode Miracle - Computerphile](https://www.youtube.com/watch?v=MijmeoH9LT4&ab_channel=Computerphile)
 * [Hash Table Collision Resolution](https://eng.libretexts.org/Courses/Folsom_Lake_College/CISP_430%3A_Data_Structures_(Aljuboori)/07%3A_Hash_Tables/7.03%3A_Collision_resolution)
+* [DJB2 Hash Function Explained](https://theartincode.stanis.me/008-djb2/)
