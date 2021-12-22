@@ -100,6 +100,13 @@ Enter Unicode, a universal character set with the intention to include all chara
 
 Specifics aside, the key thing to remember is that **string characters are represented in computer memory just like integers, and we use a simple lookup table to create a mapping from number to char.**
 
+## Recursion
+The three rules for a recursive function are:
+
+1. Must have a base case
+2. Must change its state to move towards the base case
+3. Must call itself
+
 
 ## Lecture slides
 * [Number Bases and Character Encoding](https://docs.google.com/presentation/d/17g5vepthZ-R582Z9CBJwzH2TMJHDMI6LTxy6e7wrp2o/edit?usp=sharing)
