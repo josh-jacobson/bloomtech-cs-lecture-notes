@@ -6,11 +6,14 @@ Time complexity for singly linked lists:
 * Access a specific index: O(n) (we have to traverse node by node to get to the desired index)
 * Insert or delete at a specific index: O(n) 
 
-Depending on the implementation, you'll generally always have access to the "head" node (beginning of list) and sometimes also the "tail node" (end of list). In a singly-linked list, you may only traverse forward using the "next node" pointers, while in other implementations you may also be able to traverse backwards or go around the horn from end to beginning.
-
-Other variations:
-* Doubly Linked List (each node stores both next and previous pointers)
+Variations:
+* Singly Linked List (the standard version, each node stores a value and next pointer)
+* Doubly Linked List (each node stores a value and both next and previous pointers)
 * Circular Linked List (last node points to the first node rather than None)
+
+In a singly-linked list, you may only traverse forward using the "next node" pointers, while in other implementations you may also be able to traverse backwards or go around the horn from end to beginning.
+
+Depending on the implementation, you'll generally always have access to the "head" node (beginning of list) and also the "tail node" (end of list) in the case of a doubly linked list. 
 
 Algorithms problems involving linked lists are often testing your ability to manipulate pointers, traverse through a linked list and handle edge cases. Here are some tricks that are helpful for many common whiteboarding questions:
 * Dummy head: Create a dummy starting node and construct a list using its next pointer. Useful for handling edge cases like traversing an empty list
