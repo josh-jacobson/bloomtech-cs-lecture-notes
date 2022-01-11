@@ -42,4 +42,8 @@ Use a linked list or dynamic array to implement a stack.
 ## Tree Traversal
 
 ## Additional Resources
+### Articles
 * [Data Structures: Linked Lists](https://www.youtube.com/watch?v=njTh_OwMljA&ab_channel=HackerRank)
+
+### Videos
+* [NeetCode: Reverse Linked List - Iterative AND Recursive](https://www.youtube.com/watch?v=G0_I-ZF0S38&ab_channel=NeetCode)
