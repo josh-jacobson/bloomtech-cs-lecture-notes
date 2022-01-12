@@ -37,7 +37,7 @@ Elements can be added to or removed from a stack at only one end. Since we view 
 
 Use a linked list or dynamic array to implement a stack.
 
-# Binary Search Trees
+## Binary Search Trees
 
 ## Tree Traversal
 
