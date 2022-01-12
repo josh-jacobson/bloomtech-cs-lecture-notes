@@ -41,6 +41,12 @@ Use a linked list or dynamic array to implement a stack.
 
 ## Tree Traversal
 
+## Lecture Slides
+* [Linked Lists](https://docs.google.com/presentation/d/152wng2hly2NhuNOYkf7MbY6L6r_EvqFJRHBC26eBNtk/edit?usp=sharing)
+* [Queues and Stacks](https://docs.google.com/presentation/d/1Xl2Z2ji3g85qqYiH31GwUIPPeWzwNmxml-xT60zCVPk/edit?usp=sharing)
+* [Binary Search Trees]()
+* [Tree Traversal]()
+
 ## Additional Resources
 ### Articles
 * [Data Structures: Linked Lists](https://www.youtube.com/watch?v=njTh_OwMljA&ab_channel=HackerRank)
