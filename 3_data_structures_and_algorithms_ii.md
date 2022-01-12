@@ -53,3 +53,6 @@ Use a linked list or dynamic array to implement a stack.
 
 ### Videos
 * [NeetCode: Reverse Linked List - Iterative AND Recursive](https://www.youtube.com/watch?v=G0_I-ZF0S38&ab_channel=NeetCode)
+
+### Tools
+* [Finite State Machine Designer](https://madebyevan.com/fsm/) - helpful for whiteboarding & visualizing linked lists
