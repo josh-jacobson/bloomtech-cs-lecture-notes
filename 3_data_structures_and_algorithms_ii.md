@@ -37,6 +37,25 @@ Elements can be added to or removed from a stack at only one end. Since we view 
 
 Use a linked list or dynamic array to implement a stack.
 
+# Stacks and Queues in Python
+Python offers a double-ended queue (deque) to act as a stack/queue. It has some great built-in features:
+* O(1) appends and pops to both ends of the queue
+* Implemented using a doubly-linked list
+* Indexing (new in Python 3.5)
+* Append (aka push) and pop from both sides of the queue
+* Reverse in place
+
+Import the `deque` module and instantiate a shiny new data structure:
+```python
+from collections import deque
+
+myDeque = deque()
+```
+
+Instant stack implementation:
+* `myDeque.append(val)` to push
+* `return myDeque.pop()` to pop
+
 ## Binary Search Trees
 
 ## Tree Traversal
@@ -48,8 +67,9 @@ Use a linked list or dynamic array to implement a stack.
 * [Tree Traversal]()
 
 ## Additional Resources
-### Articles
+### Articles & Docs
 * [Data Structures: Linked Lists](https://www.youtube.com/watch?v=njTh_OwMljA&ab_channel=HackerRank)
+* [Python deque documentation](https://docs.python.org/3/library/collections.html#collections.deque)
 
 ### Videos
 * [NeetCode: Reverse Linked List - Iterative AND Recursive](https://www.youtube.com/watch?v=G0_I-ZF0S38&ab_channel=NeetCode)
