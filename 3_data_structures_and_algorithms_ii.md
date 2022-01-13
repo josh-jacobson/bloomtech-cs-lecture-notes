@@ -56,6 +56,10 @@ Instant stack implementation:
 * `myDeque.append(val)` to push
 * `return myDeque.pop()` to pop
 
+Instant queue implementation:
+* `myDeque.append(val)` to enqueue
+* `return myDeque.popleft()` to dequeue
+
 ## Binary Search Trees
 
 ## Tree Traversal
@@ -70,6 +74,7 @@ Instant stack implementation:
 ### Articles & Docs
 * [Data Structures: Linked Lists](https://www.youtube.com/watch?v=njTh_OwMljA&ab_channel=HackerRank)
 * [Python deque documentation](https://docs.python.org/3/library/collections.html#collections.deque)
+* [Geeks for Geeks - Queue in Python)[https://www.geeksforgeeks.org/queue-in-python/]
 
 ### Videos
 * [NeetCode: Reverse Linked List - Iterative AND Recursive](https://www.youtube.com/watch?v=G0_I-ZF0S38&ab_channel=NeetCode)
