@@ -31,7 +31,7 @@ Elements can be added only at one end, the "rear", Elements can be removed only 
 We call adding to a queue "enqueueing", and removing from a queue "dequeueing".
 
 Use a linked list or dynamic array to implmement a queue.  
-The linked list implementation has the advantage constant-time insertion and deletion. (All operations linear time with the array implementation)
+The linked list implementation has the advantage of O(1) insertion and deletion. (vs O(n) with the array implementation)
 
 ### Implementing a Stack
 Elements can be added to or removed from a stack at only one end. Since we view this end as the "top" of the stack, we use the term "push" for add, and the term "pop" for remove. 
