@@ -30,12 +30,13 @@ The names are helpful in remembering exactly these work! A queue is just like pe
 Elements can be added only at one end, the "rear", Elements can be removed only at the other end, the "front".
 We call adding to a queue "enqueueing", and removing from a queue "dequeueing".
 
-Use a linked list or dynamic array to implmement a queue.
+Use a linked list or dynamic array to implmement a queue.  
+The linked list implementation has the advantage constant-time insertion and deletion. (All operations linear time with the array implementation)
 
 ### Implementing a Stack
 Elements can be added to or removed from a stack at only one end. Since we view this end as the "top" of the stack, we use the term "push" for add, and the term "pop" for remove. 
 
-Use a linked list or dynamic array to implement a stack.
+Similarly, you can use a linked list (O(1) push/pop) or dynamic array (O(n) push/pop) to implement a stack.
 
 # Stacks and Queues in Python
 Python offers a double-ended queue (deque) to act as a stack/queue. It has some great built-in features:
