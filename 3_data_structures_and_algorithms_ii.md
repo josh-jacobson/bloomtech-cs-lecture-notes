@@ -61,6 +61,14 @@ Instant queue implementation:
 * `myDeque.append(val)` to enqueue
 * `return myDeque.popleft()` to dequeue
 
+## Binary Trees
+Each node has:
+* a value
+* (optional) left child
+* (optional) right child
+
+A "leaf" is a node at the end of a branch of the tree, i.e., it has no children.
+
 ## Binary Search Trees
 
 ## Tree Traversal
