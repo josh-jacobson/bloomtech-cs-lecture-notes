@@ -75,7 +75,7 @@ Instant queue implementation:
 ### Articles & Docs
 * [Data Structures: Linked Lists](https://www.youtube.com/watch?v=njTh_OwMljA&ab_channel=HackerRank)
 * [Python deque documentation](https://docs.python.org/3/library/collections.html#collections.deque)
-* [Geeks for Geeks - Queue in Python)[https://www.geeksforgeeks.org/queue-in-python/]
+* [Geeks for Geeks - Queue in Python](https://www.geeksforgeeks.org/queue-in-python/)
 
 ### Videos
 * [NeetCode: Reverse Linked List - Iterative AND Recursive](https://www.youtube.com/watch?v=G0_I-ZF0S38&ab_channel=NeetCode)
