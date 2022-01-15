@@ -68,8 +68,8 @@ Instant queue implementation:
 ## Lecture Slides
 * [Linked Lists](https://docs.google.com/presentation/d/152wng2hly2NhuNOYkf7MbY6L6r_EvqFJRHBC26eBNtk/edit?usp=sharing)
 * [Queues and Stacks](https://docs.google.com/presentation/d/1Xl2Z2ji3g85qqYiH31GwUIPPeWzwNmxml-xT60zCVPk/edit?usp=sharing)
-* [Binary Search Trees]()
-* [Tree Traversal]()
+* [Binary Search Trees](https://docs.google.com/presentation/d/1eF1rdHC4LSoAbb0M2sjLp2TUqklnx0rv9J7EquvhEwU/edit?usp=sharing)
+* [Tree Traversal](https://docs.google.com/presentation/d/1qwXulsd0Iw6OXQFc3G_2Gn-aBTW8lUqz3RlBuVINt68/edit?usp=sharing)
 
 ## Additional Resources
 ### Articles & Docs
