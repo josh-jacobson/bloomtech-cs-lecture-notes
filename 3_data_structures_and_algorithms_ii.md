@@ -106,9 +106,9 @@ There are two main categories for how to traverse a tree:
 In general, the idea here is to traverse all the way out to a leaf first, then move "across" the tree gradually, finding each leaf before moving on.
 
 There are 3 variations of DFS:
-In-order: left, current, right
-Pre-order: current, left, right
-Post-order, left, right, current
+* In-order: left, current, right
+* Pre-order: current, left, right
+* Post-order, left, right, current
 
 Each of these can be implemented iteratively or recursively.
 
