@@ -69,9 +69,45 @@ Each node has:
 
 A "leaf" is a node at the end of a branch of the tree, i.e., it has no children.
 
+### Balanced Binary Trees
+The height of left and right subtree of every node may differ, at most, by 1.
+
+
+### Perfect Binary Trees
+A "perfect" tree has every level completely filled. Every node has either 2 children or none, and the height/depth is exactly the same across the tree. 
+
+By definition, a perfect binary tree is also balanced.
+
+If you know the number of nodes in a perfect tree, n, you can calculate the tree height:
+h = log2(n + 1)
+
+And likewise, if you know the height you can calculate the number of nodes in a perfect tree:
+n = 2^h - 1
+
+
 ## Binary Search Trees
+* Left subtree contains children <= root
+* Right subtree contains children > root
+
+If they are balanced, BST's can provide better lookup and insert performance than non-BSTs.
+
+Time complexity of get, insert, remove operations:
+* O(n) for a non-balanced BST
+* O(log n) for a balanced BST
 
 ## Tree Traversal
+There are two ways to traverse a tree:
+
+### Depth-first search (DFS)
+In-order: left, current, right
+Pre-order: current, left, right
+Post-order, left, right, current
+
+Each of these can be implemented iteratively or recursively.
+
+### Breadth-first search (BFS)
+Level-order: search left to right at each level. This can be implemented using a queue.
+
 
 ## Lecture Slides
 * [Linked Lists](https://docs.google.com/presentation/d/152wng2hly2NhuNOYkf7MbY6L6r_EvqFJRHBC26eBNtk/edit?usp=sharing)
