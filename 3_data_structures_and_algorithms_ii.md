@@ -96,9 +96,14 @@ Time complexity of get, insert, remove operations:
 * O(log n) for a balanced BST
 
 ## Tree Traversal
-There are two ways to traverse a tree:
+Linked lists, stacks, and queues are linear data structures in the snese that there is really only one sensible way to traverse. However, for hierarchical data structures like trees, there are many possible ways to traverse.
+
+There are two main categories for how to traverse a tree:
 
 ### Depth-first search (DFS)
+In general, the idea here is to traverse all the way out to a leaf first, then move "across" the tree gradually, finding each leaf before moving on.
+
+There are 3 variations of DFS:
 In-order: left, current, right
 Pre-order: current, left, right
 Post-order, left, right, current
@@ -106,6 +111,8 @@ Post-order, left, right, current
 Each of these can be implemented iteratively or recursively.
 
 ### Breadth-first search (BFS)
+For a BFS, we want to make our way all the way across the tree (it's "breadth") first. You can visualize this as traversing each "level" of the tree from left to right, saving the leaves for last.
+
 Level-order: search left to right at each level. This can be implemented using a queue.
 
 
