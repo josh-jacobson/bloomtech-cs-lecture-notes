@@ -95,6 +95,8 @@ Time complexity of get, insert, remove operations:
 * O(n) for a non-balanced BST
 * O(log n) for a balanced BST
 
+Retreiving all the values in a binary search tree in order is simple -- just do an in-order (DFS) traversal. BSTs also have efficient O(log n) searches, just like a sorted array. The main advantage of using a BST over a sorted array is for more efficient insertions and deletions.
+
 ## Tree Traversal
 Linked lists, stacks, and queues are linear data structures in the snese that there is really only one sensible way to traverse. However, for hierarchical data structures like trees, there are many possible ways to traverse.
 
