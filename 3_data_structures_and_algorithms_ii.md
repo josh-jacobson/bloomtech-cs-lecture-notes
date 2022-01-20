@@ -110,7 +110,7 @@ There are 3 variations of DFS:
 * Pre-order: current, left, right
 * Post-order, left, right, current
 
-Each of these can be implemented iteratively or recursively.
+Each of these can be implemented iteratively or recursively. Either way, a stack is the natural data structure for handling this kind of traversal! In an iterative implementation, you write your own stack pushes and pops, while in the recursive version it's the system call stack effectively doing the same thing. 
 
 ### Breadth-first search (BFS)
 For a BFS, we want to make our way all the way across the tree (it's "breadth") first. You can visualize this as traversing each "level" of the tree from left to right, saving the leaves for last.
