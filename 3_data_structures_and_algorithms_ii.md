@@ -112,6 +112,8 @@ There are 3 variations of DFS:
 
 Each of these can be implemented iteratively or recursively. Either way, a stack is the natural data structure for handling this kind of traversal! In an iterative implementation, you write your own stack pushes and pops, while in the recursive version it's the system call stack effectively doing the same thing. 
 
+A good way to think about the role of the stack in these implementations is that we're stacking up the values that we've **seen but not "visited" (printed) yet.**
+
 ### Breadth-first search (BFS)
 For a BFS, we want to make our way all the way across the tree (it's "breadth") first. You can visualize this as traversing each "level" of the tree from left to right, saving the leaves for last.
 
