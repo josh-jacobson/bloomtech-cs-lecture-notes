@@ -51,6 +51,12 @@ Time complexity:
 * Find an edge: O(1)
 * Get all edges: O(V)
 
+
+## Graph Search
+### Breadth-First Search (BFS)
+
+### Depth-First Search (DFS)
+
 ## Lecture Slides
 * [Graphs I](https://docs.google.com/presentation/d/1ZiFMR_mw9HysZKHgWSF46CTr5lVDJ09McS_WWluyKq8/edit?usp=sharing)
 * [Graphs II](https://docs.google.com/presentation/d/1aFPwfyKMTPof-_mGAntc9Mu4ILDR8Yu_8utFUKxPQbM/edit?usp=sharing)
