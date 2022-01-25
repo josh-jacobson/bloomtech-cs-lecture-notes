@@ -28,8 +28,28 @@ For example, FANTOM is a smart contract platform that uses DAGs to provide a mor
 ## Graph Representations
 
 ### Adjacency List
+Space Complexity: O(V + E)
+
+This is the more common implementation, as it provides better time efficiency for common operations.
+
+Time complexity:
+* Add vertex: O(1)
+* Remove vertex: O(V)
+* Add edge: O(1)
+* Remove edge: O(1)
+* Find an edge: O(1)
+* Get all edges: O(1)
 
 ### Adjacency Matrix
+Space Complexity: O(V^2)
+
+Time complexity:
+* Add vertex: O(V)
+* Remove vertex: O(V^2)
+* Add edge: O(1)
+* Remove edge: O(1)
+* Find an edge: O(1)
+* Get all edges: O(V)
 
 ## Lecture Slides
 * [Graphs I](https://docs.google.com/presentation/d/1ZiFMR_mw9HysZKHgWSF46CTr5lVDJ09McS_WWluyKq8/edit?usp=sharing)
