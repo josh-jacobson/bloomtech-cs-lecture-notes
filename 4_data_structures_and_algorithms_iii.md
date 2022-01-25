@@ -20,6 +20,14 @@ Perhaps some streets are longer or have more traffic than others. We could model
 Finally, a graph can have cycles (**Cyclic Graph**) or not (**Acyclic Graph**).
 
 
+### DAGs
+
+**Directed Acyclic Graphs** are particularly useful, for applications like tracking git commit history, blockchain, smart contracts and other examples of decentralized networking.
+
+For example, FANTOM is a smart contract platform that uses DAGs to provide a more scalable consensus model than Ethereum currently offers.
+
+
+
 ## Lecture Slides
 * [Graphs I](https://docs.google.com/presentation/d/1ZiFMR_mw9HysZKHgWSF46CTr5lVDJ09McS_WWluyKq8/edit?usp=sharing)
 * [Graphs II](https://docs.google.com/presentation/d/1aFPwfyKMTPof-_mGAntc9Mu4ILDR8Yu_8utFUKxPQbM/edit?usp=sharing)
